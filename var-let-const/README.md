@@ -5,4 +5,4 @@
   1. var hello = 1;
   2. var hello = 2;
 3. let is block scoped
-  1. Blocks => if() { }; here if is block
+  1. Blocks => ``` javascript if() { }; ```  here if is block

@@ -73,14 +73,20 @@ r =5; //now updated to 5
 ```javascript
   var a = 1 //exposed to global scope on window objecct
   // to solve this problem IIFE is used
+  window.a // will give you 1
+
+```
+
+```javascript
   (function(){
     var a =1 ; // now a is only exposed to this function scope
+    window.a // will give you undefined here
   })();
 
   //to fix this problem we wrap the let statement inside a block
   { // this will do the trick
     let b = 1; // not exposed to global scope
+    window.b // will give you undefined
   ]
-
 
 ```

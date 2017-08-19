@@ -43,6 +43,7 @@ console.log(winner) // the output is true because the value of var is available 
 
 const a = 1;
 const a = 2; // will throw up an error Identifier 'a' has already been declared
+a = 4 // re assigning the value to a const also throws an error;
 
 ```
 
@@ -57,6 +58,6 @@ const a= {};  // object cannot be redefined because it is defined as a const
 ```javascript
 
 const a = { b: 1, c:2 };
-a.b = 3 ; //this will work because property can be changed even if the object is defined as a const
+a.b = 3 ;  //this will work because property can be changed even if the object is defined as a const
 
 ```

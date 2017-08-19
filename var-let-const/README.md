@@ -1,4 +1,5 @@
- # ```var, let and const ```
+ # ```javascript
+ var, let and const ```
 
 1. var is function scoped
 2. You can redefine a var

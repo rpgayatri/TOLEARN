@@ -6,7 +6,7 @@
   2. var hello = 2;
 3. let is block scoped
 4. Blocks => ``` if() { }; ```  here if is block
-5. Variable defined inside a function will not leak outside of function.
+5. Variable defined inside a function with let will not leak outside of function.
 6. ```Object.freeze(objectName) ``` makes an object immutable.
  ```
 if(true){

@@ -12,7 +12,7 @@
  ```javascript
 if(true){
       let a = 10;
-      var b= 20;
+      var b = 20;
   }
 
   console.log(a); // cannot be accessed here because variables defined with let is block scoped
@@ -25,6 +25,7 @@ if(true){
   if (true){
     let winner = false
   }
- console.log(winner)  //> output is true because let is scoped inside the block and cannot be acessed outside of the block.
+ console.log(winner)  //> output is true because let is scoped inside the block and cannot be accessed outside of the block.
+ // let inside the if statement is only available inside the if statement
 
 ```

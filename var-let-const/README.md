@@ -29,3 +29,16 @@ if(true){
  // let inside the if statement is only available inside the if statement
 
 ```
+
+
+```javascript
+
+var winner = false;
+if(true){
+  var winner = true;
+}
+
+console.log(winner) // the output is true because the value of var is available outside the block.
+
+
+```

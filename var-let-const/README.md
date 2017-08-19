@@ -19,11 +19,11 @@ if(true){
   ```
 
 
-``` let winner = true
- if (true){
-   let winner = false
- }
-
+```
+  let winner = true
+  if (true){
+    let winner = false
+  }
  console.log(winner)  //> output is true because let is scoped inside the block and cannot be acessed outside of the block.
 
 ```

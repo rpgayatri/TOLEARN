@@ -1,11 +1,11 @@
  # ``` var, let and const ```
 
-1. ```var``` is function scoped
-2. You can redefine a var ``` var a = 1; var a = 2; ```
-3. ```let``` is block scoped
-4. Blocks => ``` if() { }; ```  here if is block
+1. `var` is function scoped
+2. You can redefine a var `var a = 1; var a = 2;`
+3. `let` is block scoped
+4. Blocks => `if() { };`  here if is block
 5. Variable defined inside a function with let will not leak outside of function.
-6. ```Object.freeze(objectName) ``` makes an object immutable.
+6. `Object.freeze(objectName)` makes an object immutable.
 
  ```javascript
 if(true){

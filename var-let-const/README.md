@@ -27,18 +27,36 @@ if(true){
   }
  console.log(winner)  //> output is true because let is scoped inside the block and cannot be accessed outside of the block.
  // let inside the if statement is only available inside the if statement
-
 ```
 
 
 ```javascript
-
 var winner = false;
 if(true){
   var winner = true;
 }
 
 console.log(winner) // the output is true because the value of var is available outside the block.
+```
 
+```javascript
+
+const a = 1;
+const a = 2; // will throw up an error Identifier 'a' has already been declared
+
+```
+
+
+```javascript
+
+const a = { b: 1, c:2 };
+const a= {};  // object cannot be redefined
+
+```
+
+```javascript
+
+const a = { b: 1, c:2 };
+a.b = 3 ; //this will work because property can be changed even if the object is defined as a constant
 
 ```

@@ -50,13 +50,13 @@ const a = 2; // will throw up an error Identifier 'a' has already been declared
 ```javascript
 
 const a = { b: 1, c:2 };
-const a= {};  // object cannot be redefined
+const a= {};  // object cannot be redefined because it is defined as a const
 
 ```
 
 ```javascript
 
 const a = { b: 1, c:2 };
-a.b = 3 ; //this will work because property can be changed even if the object is defined as a constant
+a.b = 3 ; //this will work because property can be changed even if the object is defined as a const
 
 ```

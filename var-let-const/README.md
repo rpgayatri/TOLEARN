@@ -88,5 +88,6 @@ r =5; //now updated to 5
     let b = 1; // not exposed to global scope
     window.b // will give you undefined
   ]
+  window.b // gives undefined
 
 ```

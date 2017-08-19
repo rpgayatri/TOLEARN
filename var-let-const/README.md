@@ -8,7 +8,8 @@
 4. Blocks => ``` if() { }; ```  here if is block
 5. Variable defined inside a function with let will not leak outside of function.
 6. ```Object.freeze(objectName) ``` makes an object immutable.
- ```
+
+ ```javascript
 if(true){
       let a = 10;
       var b= 20;
@@ -19,7 +20,7 @@ if(true){
   ```
 
 
-```
+```javascript
   let winner = true
   if (true){
     let winner = false

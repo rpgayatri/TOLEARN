@@ -65,5 +65,22 @@ const  d =1;
 d=3 // cannot be updated;
 
 let r = 4;
-r =5; //now updated to 5 
+r =5; //now updated to 5
+```
+
+
+
+```javascript
+  var a = 1 //exposed to global scope on window objecct
+  // to solve this problem IIFE is used
+  (function(){
+    var a =1 ; // now a is only exposed to this function scope
+  })();
+
+  //to fix this problem we wrap the let statement inside a block
+  { // this will do the trick
+    let b = 1; // not exposed to global scope
+  ]
+
+
 ```

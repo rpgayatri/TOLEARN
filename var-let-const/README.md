@@ -59,3 +59,11 @@ const a = { b: 1, c:2 };
 a.b = 3 ;  //this will work because property can be changed even if the object is defined as a const
 
 ```
+
+```javascript
+const  d =1;
+d=3 // cannot be updated;
+
+let r = 4;
+r =5; //now updated to 5 
+```

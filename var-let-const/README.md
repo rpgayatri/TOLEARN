@@ -1,4 +1,4 @@
- # ```javascript
+ # ```
  var, let and const ```
 
 1. var is function scoped

@@ -10,7 +10,7 @@ console.log(a);
 ```
 
 
-#### what if we console.log() before the variable is created
+#### what if we console.log() before the variable is created ?
 
 ```javascript
 console.log(a);
@@ -19,7 +19,7 @@ var a = 1 ;
 // this gives an output of undefined
 // why undefined ? not an error , the obvious question is why not error because it doesn't exists yet.
 // Well in javascript variables that are defined are hoisted on top without a value
-// javascript takes all the variable definitions and put them on first but without as value so they are initialized as undefined.
+// javascript takes all the variable definitions and put them on first but without the value, they are initialized as undefined.
 
 ```
 

@@ -18,7 +18,7 @@
 ```javascript
   dogs = ['huskey', 'spitz', 'bulldog'];
 
-  const fancy = dogs.map(function(dog){
+  const fancy = dogs.map( function( dog ) {
     return `fancy ${dog}`;
   });
 
@@ -27,7 +27,7 @@
 
   // Now lets convert this thing into arrow functions
   dogs = ['huskey', 'spitz', 'bulldog'];
-  const fancy = dogs.map((dog)=>{
+  const fancy = dogs.map(( dog ) => {
     return `fancy ${dog}`;
   });
   console.log(fancy);

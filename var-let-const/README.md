@@ -102,7 +102,7 @@ for (var i =0 ; i< 3; i++) {
     },1000)
   }
 
-  // In this function any logical output we would like to think it it prints 1 2 3
+  // In this function any logical output we would like to think is it prints 1 2 3
   // But the output given by javascript is it prints 3 3 times
   // why is that so ?
   // because the function is run after one second and the value of i after 1 sec becomes 3.

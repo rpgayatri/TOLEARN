@@ -8,7 +8,7 @@
   }
 
   // turn the above function into this
-   () => {} // thats it more simple and concise
+   () => {} // thats it. more simple and concise
 
 ```
 
@@ -32,5 +32,5 @@
   });
   console.log(fancy);
 
-  //Same things but more clean and readable code.
+  //Same thing,  but more clean and readable code.
 ```

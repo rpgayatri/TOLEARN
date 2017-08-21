@@ -103,7 +103,7 @@ for (var i =0 ; i< 3; i++) {
   }
 
   // In this function any logical output we would like to think is it prints 0 1 2
-  // But the output given by javascript is it prints 3 3 times
+  // But the output given by javascript is it prints '3' 3 times
   // why is that so ?
   // because the function is run after one second and the value of i after 1 sec becomes 3.
   // Why not 2 but 3 ?
@@ -111,6 +111,6 @@ for (var i =0 ; i< 3; i++) {
   // loop doesn't run but the value of i becomes 3. because the value of i is scoped outside of the loop it goes till i ++.
   // if let is used the value of i cannot reach i++, because let is block scoped.
   // after the loop is finished the value of i doesn't leak to i++ if let is used.
-  // if you just replace let with var the output should be 0 1 2 
+  // if you just replace let with var the output should be 0 1 2
 
 ```

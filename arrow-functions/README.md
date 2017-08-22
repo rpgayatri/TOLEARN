@@ -51,6 +51,19 @@ function hello (()=> {
 ```
 
 
+### filter method
+
+```javascript
+  let ages = [40,50,60, 70, 20, 30 ,22];
+  const old = ages.filter((age)=> { return age> 40 });
+  console.log(old);
+
+```
+
+
+
+
+
 
 #### Notes
 1. You cannot use named functions with arrow functions.
@@ -58,4 +71,33 @@ function hello (()=> {
 ```javascript
 //You cannot do this
   hello () => { }  // You cannot do this.
+
  ```
+
+ 2. Arrow functions inherits the this from parent this
+
+```javascript
+ function () {
+   console.log(this);
+
+   function () {
+     console.log(this);
+   } // both this have different values
+ }
+
+
+ function () {
+   console.log(this);
+
+    () => {
+     console.log(this);
+   } // this this has the same value as upper `this`
+ }
+
+
+
+
+
+
+
+```

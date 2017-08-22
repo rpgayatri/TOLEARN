@@ -34,3 +34,12 @@
 
   //Same thing,  but more clean and readable code.
 ```
+
+#### Other Examples
+```javascript
+// if the function doesn't have any arguments there must be opening and closing brackets.
+function hello (()=> {
+
+})
+
+```

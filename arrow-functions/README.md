@@ -43,3 +43,14 @@ function hello (()=> {
 })
 
 ```
+
+
+
+### Notes
+1. You cannot use named functions with arrow functions.
+
+```javascript
+//You cannot do this
+  hello () => { }  // You cannot do this.
+ ```
+ 

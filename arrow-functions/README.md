@@ -74,7 +74,7 @@ function hello (()=> {
 
  ```
 
- 2. Arrow functions inherits the `this` from parent this
+ 2. Arrow functions inherits the `this` from parent `this`
 
 ```javascript
  function () {

@@ -74,7 +74,7 @@ function hello (()=> {
 
  ```
 
- 2. Arrow functions inherits the this from parent this
+ 2. Arrow functions inherits the `this` from parent this
 
 ```javascript
  function () {
@@ -82,7 +82,7 @@ function hello (()=> {
 
    function () {
      console.log(this);
-   } // both this have different values
+   } // both `this` have different values
  }
 
 

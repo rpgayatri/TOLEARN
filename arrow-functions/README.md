@@ -4,14 +4,12 @@
 ```javascript
 
   function () {
-
   }
 
   // turn the above function into this
    () => {} // thats it. more simple and concise
 
 ```
-
 
 ## map and arrow function
 
@@ -36,7 +34,8 @@
 ```
 
 #### Other Examples
-```javascript
+
+1. ```javascript
 // if the function doesn't have any arguments there must be opening and closing brackets.
 function hello (()=> {
 
@@ -44,13 +43,19 @@ function hello (()=> {
 
 ```
 
+2. ```javascript
+  const name = () => { alert("hello world");}
+  const name2 = (name) => {alert(`hello ${name}`);}
+  name2();
+
+```
 
 
-### Notes
+
+#### Notes
 1. You cannot use named functions with arrow functions.
 
 ```javascript
 //You cannot do this
   hello () => { }  // You cannot do this.
  ```
- 

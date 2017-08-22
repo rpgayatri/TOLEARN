@@ -34,16 +34,16 @@
 ```
 
 #### Other Examples
-
-1. ```javascript
+1.
+```javascript
 // if the function doesn't have any arguments there must be opening and closing brackets.
 function hello (()=> {
 
 })
 
 ```
-
-2. ```javascript
+2.
+```javascript
   const name = () => { alert("hello world");}
   const name2 = (name) => {alert(`hello ${name}`);}
   name2();

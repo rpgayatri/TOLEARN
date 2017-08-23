@@ -60,11 +60,6 @@ function hello (()=> {
 
 ```
 
-
-
-
-
-
 #### Notes
 1. You cannot use named functions with arrow functions.
 
@@ -93,11 +88,14 @@ function hello (()=> {
      console.log(this);
    } // this this has the same value as upper `this`
  }
+```
 
 
-
-
-
+```javascript
+// String interpolation
+const number = 1;
+const sentence = `inserting number ${1} inside this string`;
+console.log(sentence);
 
 
 ```

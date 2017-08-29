@@ -10,11 +10,8 @@
 #### Now with template literals
 
 ```javascript
-  //Fix above code with template literals
-  //F
   let a = 1;
   console.log(`this is number ${a}`);
-  // Results in More cleaner and simple code
 
 ```
 

@@ -43,3 +43,26 @@ document.getElementById('content').innerHTML = code;
   //Output will be hello
 
 ```
+
+
+### String Methods
+
+##### startsWith
+
+```javascript
+  const id = 'b1302912';
+  const out = id.startsWith('b');
+  console.log(out);
+  // output is true
+
+```
+
+##### endsWith
+
+```javascript
+  const id = 'b1302912'
+  const out  = id.endsWith('2');
+  console.log(out);
+  // Output is true
+
+```

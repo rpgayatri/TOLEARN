@@ -30,3 +30,16 @@ const code = ` <h1> ${msg.content} </h1>`
 document.getElementById('content').innerHTML = code;
 
 ```
+
+
+#### Tagged template literals
+```javascript
+  function trans(strings){
+    return strings.toString().toLowerCase();
+  }
+  let content = trans`HELLO`;
+  console.log(content);
+
+  //Output will be hello
+
+```

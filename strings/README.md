@@ -66,3 +66,14 @@ document.getElementById('content').innerHTML = code;
   // Output is true
 
 ```
+
+
+##### includes
+
+```javascript
+  const id = 'b1301010';
+  const out = id.includes('3010');
+  console.log(out);
+  // Output true
+  
+```

@@ -71,7 +71,7 @@ function hello (()=> {
 ```
 
 ```javascript
-  // Filter
+  // map
   persons = [{name: 'Nischal', age: 20}, {name: 'John', age: 19}];
 b = persons.map((person) => { return person.age+1})
 console.log(b);
@@ -79,6 +79,7 @@ console.log(b);
 ```
 
 ```javascript
+// reduce
 
 const a = [1,2,3];
 let b = a.reduce((sum,num)=> {return sum+num },0)

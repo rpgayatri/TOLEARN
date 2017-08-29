@@ -74,6 +74,15 @@ document.getElementById('content').innerHTML = code;
   const id = 'b1301010';
   const out = id.includes('3010');
   console.log(out);
+  id.includes('B') // Output is false
   // Output true
-  
+
+```
+
+
+#####  Repeat
+```javascript
+// Repeats a string Number of times
+const 'hello'.repeat(100);
+
 ```

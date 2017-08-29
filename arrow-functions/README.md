@@ -60,6 +60,33 @@ function hello (()=> {
 
 ```
 
+
+
+### Examples
+
+```javascript
+  // Filter
+  persons = [{name: 'Nischal', age: 20}, {name: 'John', age: 19}]
+  persons.filter((person)=> { return person.age===20});
+```
+
+```javascript
+  // Filter
+  persons = [{name: 'Nischal', age: 20}, {name: 'John', age: 19}];
+b = persons.map((person) => { return person.age+1})
+console.log(b);
+//Output is 20 and 21
+```
+
+```javascript
+
+const a = [1,2,3];
+let b = a.reduce((sum,num)=> {return sum+num },0)
+console.log(b);
+
+// Output is 6
+```
+
 #### Notes
 1. You cannot use named functions with arrow functions.
 

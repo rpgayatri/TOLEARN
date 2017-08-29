@@ -74,8 +74,8 @@ document.getElementById('content').innerHTML = code;
   const id = 'b1301010';
   const out = id.includes('3010');
   console.log(out);
-  id.includes('B') // Output is false
   // Output true
+  id.includes('B') // Output is false
 
 ```
 

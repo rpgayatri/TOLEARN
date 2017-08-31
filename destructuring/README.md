@@ -43,3 +43,23 @@ console.log(tallest) // Output is Everest
 console.log(tall) // Output is ['Dhaulagiri', 'Kanchanjunga']
 
 ```
+
+
+## Swapping variables
+
+```javascript
+
+  //Before es6
+  let a = 1;
+  let b = 2;
+  let temp = a;
+  a = b;
+  b= temp;
+
+  //With es6
+  //W
+  [a, b] = [b, a];
+
+
+
+```

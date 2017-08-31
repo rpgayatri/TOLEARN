@@ -31,3 +31,15 @@
 
 
 ## Destructuring Arrays
+
+```javascript
+
+const numbers  = [1,2,3,4];
+const [a, b, c, d] = numbers;
+
+const mountains = ['Everest', 'Annapurna', 'Dhaulagiri', 'Kanchanjunga'];
+const [tallest, taller, ...tall] = mountains;
+console.log(tallest) // Output is Everest
+console.log(tall) // Output is ['Dhaulagiri', 'Kanchanjunga']
+
+```

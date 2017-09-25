@@ -45,7 +45,7 @@ console.log(tall) // Output is ['Dhaulagiri', 'Kanchanjunga']
 ```
 
 
-## Swapping variables
+## Swapping variables with destructuring
 
 ```javascript
 
@@ -59,6 +59,23 @@ console.log(tall) // Output is ['Dhaulagiri', 'Kanchanjunga']
   //With es6
   //W
   [a, b] = [b, a];
+
+```
+
+## Destructuring functions
+```javascript
+function currencyConverter (amount) {
+    const converted = {
+    USD: amount*0.1,
+    JPN: amount*0.4,
+    AUD: amount*0.6
+  }
+    return converted;
+  }
+
+  const {USD, JPN} = currencyConv(100,200);
+  console.log(USD)
+
 
 
 

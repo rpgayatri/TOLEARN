@@ -21,7 +21,7 @@
   const b = Array.from(a, (z)=> return z.textContent);
 ```
 ## `Array.of()`
-### `Array.of` takes as many arguments and turns them into array 
+### `Array.of()` takes as many arguments and turns them into array 
 
 ```javascript
   const numbers = Array.of(1,2,3,4);

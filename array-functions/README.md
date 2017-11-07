@@ -27,3 +27,39 @@
   const numbers = Array.of(1,2,3,4);
   // numbers is now an array
 ```
+
+## Note that `Array.find` and `Array.findIndex` are prototype methods
+## `Array.find()`
+
+```javascript
+const posts = [{code: '123', gg: 345}, {code: 'rt4', gg: 34}];
+console.log(posts.find(post=> post.code==='123'));
+// output {code: '123, gg: 345}
+```
+
+## `Array.findIndex()`
+
+```javascript
+const posts = [{code: '123', gg: 345}, {code: 'rt4', gg: 34}];
+console.log(posts.findIndex(post=> post.code==='123'));
+//Output is 0 because code 123 is in index 0 of the array
+```
+
+### So whats the big deal with `index()` and  `indexOf()` ?
+
+## You have to do this do acheive the same results using map
+```javascript
+
+const posts = [{code: '123', gg: 345}, {code: 'rt4', gg: 34}];
+const post = posts.map(post=> {
+  if(post.code==='123'){
+    return post
+  }
+});
+console.log(post);
+
+
+
+
+
+```

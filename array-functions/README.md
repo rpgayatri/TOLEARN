@@ -1,11 +1,11 @@
-# Array Functions 
+# Array Functions
 
 ## `Array.from()`
 
 
 ### `Array.from()` takes array-ish and turns them into a true array
 
-# Example 
+### Example
 
 ```javascript
 
@@ -20,7 +20,9 @@
   // YOu can also do this 
   const b = Array.from(a, (z)=> return z.textContent);
 ```
-## `Array.of()`
+
+### `Array.of()`
+
 ### `Array.of()` takes as many arguments and turns them into array 
 
 ```javascript
@@ -29,7 +31,9 @@
 ```
 
 ## Note that `Array.find` and `Array.findIndex` are prototype methods
+
 ## `Array.find()`
+
 
 ```javascript
 const posts = [{code: '123', gg: 345}, {code: 'rt4', gg: 34}];
@@ -37,7 +41,7 @@ console.log(posts.find(post=> post.code==='123'));
 // output {code: '123, gg: 345}
 ```
 
-## `Array.findIndex()`
+### `Array.findIndex()`
 
 ```javascript
 const posts = [{code: '123', gg: 345}, {code: 'rt4', gg: 34}];
@@ -48,6 +52,7 @@ console.log(posts.findIndex(post=> post.code==='123'));
 ### So whats the big deal with `index()` and  `indexOf()` ?
 
 ## You have to do this do acheive the same results using map
+
 ```javascript
 
 const posts = [{code: '123', gg: 345}, {code: 'rt4', gg: 34}];
@@ -58,8 +63,17 @@ const post = posts.map(post=> {
 });
 console.log(post);
 
+```
+
+### `every()` and `some()` array methods
+
+```javascript 
+const ages= [12,67,34,90,16];
+const adultsPresent = ages.some(age=> age>=18); // output true
+const allOldEnough = ages.every(age=> age>=18); // output false 
 
 
 
 
 ```
+

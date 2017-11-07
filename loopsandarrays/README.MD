@@ -111,7 +111,7 @@ const numbers = [1,2,3,4];
   // The output of this program is 0,1,2,3 and hello 
 ```
 
-### for of,  the best of the both worlds.
+### for of loop,  the best of the both worlds.
 
 ```javascript
   const numbers = [1,2,3];

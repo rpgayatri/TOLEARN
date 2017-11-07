@@ -27,7 +27,7 @@
 
 ## Difference between for in loop and for of loop 
 
-### For of loop 
+## For of loop 
 ```javascript 
   
   let a = [1,2,3,4];
@@ -39,7 +39,7 @@
   
 ```
 
-### for in loop
+## for in loop
 
 ```javascript 
   let numbers = [1,2,3,4];
@@ -97,7 +97,8 @@ for(b in a) {
 1. THis loop also iterates over any other properties if a or any other methods or functions that might have been added to array prototype.
 
 ### See the example below 
-```javscript 
+
+```javascript 
 Array.prototype.hello = function (){
   console.log(hello);
 }
@@ -112,7 +113,7 @@ const numbers = [1,2,3,4];
 
 ### for of,  the best of the both worlds.
 
-```javscript
+```javascript
   const numbers = [1,2,3];
   for( const num of numbers){
     console.log(num);

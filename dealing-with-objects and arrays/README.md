@@ -1,17 +1,17 @@
-# Dealing With Objects 
+# Dealing With Objects
 
-## Spread Operator 
+## Spread Operator
 
-### Basic Example 
+### Basic Example
 
-```javscript 
+```javscript
 let a = [...'Nischal']
 // Output is ["N", "i", "s", "c", "h", "a", "l"];
 ```
 
-## lets evolve the above example 
+## Lets evolve the above example
 
-```javascript 
+```javascript
 const a = [1,2,3];
 const b = [4,5,6];
 const c = [...a, ...b, 7];
@@ -37,11 +37,43 @@ console.log(c);
 
 //many ways to fix this lets fix this by using spread operator
 
-we could simply do 
+/// We could simply do
 
-const d =[..c]; // replace d=c with this pice of code 
-
+const d =[..c]; // replace d=c with this pice of code
 
 ```
 
+## More examples
 
+```javascript
+
+const fruits = ['apple', 'mango', 'berry'];
+const ingredients = {
+  fruits: ['banana', 'apple']
+}
+
+const allFruit = [...fruits, ...ingredients.fruits];
+console.log(allFruit);
+//Output is ['apple', 'mango', 'berry', 'banana', 'apple'];
+
+```
+
+## Even More Examples 
+
+```javascript
+  const animals = [
+    {name: 'Koala', hasTail: false},
+    {name: 'kangaroo', hasTail: true},
+    {name: 'croc' , hasTail: true},
+    {name: 'pelican', hasTail: false}
+  ];
+
+  // lets say we only want 1,2, and 4th item in a new array
+
+  const indexAnimal = animals.findIndex((animal)=> animal.name==='croc');
+  const newAnimals = [...animals.slice(0,indexAnimal), ...animals.slice(indexAnimal+1)];
+  console.log(newAnimals);
+  // The new output is [{name: 'Koala', hasTail: false},{name: 'kangaroo', hasTail: true},{name: 'pelican', hasTail: false}
+  ]
+
+```

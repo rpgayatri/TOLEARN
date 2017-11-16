@@ -1,4 +1,4 @@
-# Dealing With Objects
+# Dealing With Objects / Spread and Rest Operators and Object Literals
 
 ## Spread Operator
 
@@ -76,4 +76,89 @@ console.log(allFruit);
   // The new output is [{name: 'Koala', hasTail: false},{name: 'kangaroo', hasTail: true},{name: 'pelican', hasTail: false}
   ]
 
+```
+
+
+## Spreading into a function
+
+```javascript
+
+const names = ['Nischal', 'Gautam'];
+
+function alertNames(first,last){
+  alert(` hey there ${first} ${last}`);
+}
+
+alertNames(...names);   // spread operator will spread the array into 2 strings as a function input
+```
+
+## Rest Operator
+
+
+### 1st use case => on functions
+
+1. Rest opearator literally grabs rest of the remaining values
+
+
+```javascript
+
+function hello(name, ...otherAttributes){
+  console.log(name, ...otherAttributes);
+}
+
+hello('Nischal', 'human', 'not an alien');
+// Output 'Nischal', ['human','not an alien'];
+```
+
+
+### 2nd Use case => while destructuring
+
+```javascript
+
+const runner = ['Nischal', 12.3,45.4, 45.0];
+const [name, ...runs] = runner // grabs the rest of the values 
+
+
+```
+
+## Object Literals 
+
+### Example 1 
+
+```javascript
+
+const name1 = "hello1";
+const name2 = "hello2";
+const name3 = "hello3";
+
+const names = {
+  name1,
+  name2,
+  name3
+}
+
+```
+
+### Example 2 
+
+```javascript 
+const names = {
+  create(){
+
+  },
+  delete(){
+
+  }
+}
+
+// it would be written like this without es6
+
+const names = {
+  create: function(){
+
+  },
+  delete: function(){
+
+  }
+}
 ```

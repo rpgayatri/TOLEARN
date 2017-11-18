@@ -89,3 +89,22 @@ findPostByid(1)
 })
 
 ```
+
+## Working with multiple promises
+
+```javascript
+
+const oranges = fetch('api.oranges.com');
+const apples = fetch('api.apples.com');
+
+Promise
+  .all[oranges,apples]
+  .then(responses => {
+    return Promise.all(responses.map(response=> response.json()))
+  })
+  .then(resp=> {
+    console.log(resp);
+  })
+
+```
+

@@ -72,7 +72,6 @@ function hydrate(post){
     else {
       reject(Error("error on finding author"));
     }
-     
   });
 }
 
@@ -84,19 +83,9 @@ findPostByid(1)
 })
 .then(author=> {
   console.log(author);
-});
-
-
-
-             
-    
-      
-
-      
-
-
-
-
-
+})
+.catch(err=> {
+  console.log(err);
+})
 
 ```

@@ -63,5 +63,3 @@ const newDisplayName = displayName.bind(person);
 
 
 ```
-
-

@@ -43,8 +43,3 @@
 ``` 
 
 
-## Notes
-
-1. eslint plugins are the individual plugins for example: arrow functions. The individual features of es2015 are plugins.
-
-2. Eslint presets are the collection of plugins for example: arrow functions , rest operator , spread, destructuring. The collection of those plugins are presets.

@@ -1,4 +1,4 @@
-# Prototyoe inheritance and es6 class
+# Prototyoe inheritance and es6 class and extending class with super
 
 
 
@@ -34,6 +34,7 @@ class Dog  {
   bark() {
     console.log("BARK BARK!!");
   }
+  
     // this method is only available to class not an object and is not inherited.
   static info(){ 
     console.log("A dog is better than a cat");
@@ -61,3 +62,10 @@ console.log(miley.nickname)
 
 ```
 
+## Extending classes with super
+
+```javascript
+
+
+
+```

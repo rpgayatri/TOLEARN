@@ -1,4 +1,4 @@
-# Babel 
+# Babel , Ployfill
 
 ## Notes
 
@@ -23,6 +23,19 @@
 "scripts" : {
   "babel" : "babel index.js --watch --out-file compiled-index.js"
 }
-
-
 ```
+
+
+## Polyfill
+
+1. polyfill makes  new methods that are not supported by browsers available 
+
+#### For browsers
+
+`
+ployfill.io
+`
+
+1. it makes new methods like Array.from() available to older browsers
+2.  it dynamically makes new methods available instead of making all the methods available.
+3. use `require 'babel-polyfill'` for using with webpack

@@ -31,3 +31,20 @@
 1. `npm install -g eslint`
 1. `eslint --init`  and choose  setting that you need
 1. Doing the above steps on your project directory will initialize eslint on your project.
+
+
+# Some eslint hacks 
+
+```javascript 
+/*  globals  variable1 variable2 */
+/* eslint disable */
+
+
+``` 
+
+
+## Notes
+
+1. eslint plugins are the individual plugins for example: arrow functions. The individual features of es2015 are plugins.
+
+2. Eslint presets are the collection of plugins for example: arrow functions , rest operator , spread, destructuring. The collection of those plugins are presets.

@@ -1,4 +1,8 @@
-# Prototyoe inheritance
+# Prototyoe inheritance and es6 class
+
+
+
+## prototypal inheritance
 
 ```javascript
 
@@ -18,3 +22,24 @@ gimmi.bark();
 gimmi.laugh();
 // gimmi inherits from Dog class
 ```
+
+## es6 class 
+
+```javascript 
+
+class Dog () {
+  constructor(name, breed){
+    this.name = name; 
+    this.breed = breed;
+  }
+
+  bark() {
+    console.log("BARK BARK!!");
+  }
+}
+
+const miley = new Dog('miley', 'labrador');
+miley.bark();
+
+```
+

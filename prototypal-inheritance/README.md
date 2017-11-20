@@ -98,3 +98,46 @@ console.log(rhino.eat('pizza'));
 
 
 ```
+
+
+## Extending arrays 
+
+```javascript 
+
+class MovieCollection extends Array {
+	constructor(name, ...items){
+		console.log(items, "first level");
+		super(items);
+		this.name = name;
+		
+	}
+	
+	add(movie){
+    this.push(...movie);
+   }
+}
+
+
+const movies = new MovieCollection("col1",
+{
+	title: "hello",
+	rating: 10
+},
+{
+  title: "hello3",
+  rating:40
+}
+);
+
+movies.add({title:"heloo", rating:10});
+
+
+console.log(movies);
+
+
+
+
+
+
+
+```

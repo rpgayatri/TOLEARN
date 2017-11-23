@@ -105,23 +105,21 @@ console.log(rhino.eat('pizza'));
 ```javascript 
 
 class MovieCollection extends Array {
-	constructor(name, ...items){
-		console.log(items, "first level");
-		super(items);
-		this.name = name;
-		
-	}
-	
-	add(movie){
+  constructor(name, ...items){
+  console.log(items, "first level");
+  super(items);
+  this.name = name;
+  }
+
+  add(movie){
     this.push(...movie);
    }
 }
 
-
 const movies = new MovieCollection("col1",
 {
-	title: "hello",
-	rating: 10
+  title: "hello",
+  rating: 10
 },
 {
   title: "hello3",

@@ -1,7 +1,7 @@
 # Javascript Generators
 
  
- ```javascript 
+ ```javascript
 
 const people = [{name: "Nischal", age: 25}, {name: "Ninu", age: 22}];
 
@@ -36,7 +36,6 @@ function ajax(url){
    const joe = yield ajax("https://api.discogs.com/artists/51988");
    console.log(joe);
  }
-
 
   const stepsGen = steps();
 
